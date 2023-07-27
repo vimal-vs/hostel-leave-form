@@ -92,11 +92,11 @@ export default function Form() {
     </div>
     <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-6 group">
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="parent_phone" id="parent_phone" className={inputStyle} placeholder=" " required />
+            <input type="text" pattern="[0-9]{10}" name="parent_phone" id="parent_phone" className={inputStyle} placeholder=" " required />
             <label htmlFor="parent_phone" className={labelStyle}>Parent/Guardian&apos;s Mobile No.</label>
         </div>
         <div className="relative z-0 w-full mb-6 group">
-            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="student_phone" id="student_phone" className={inputStyle} placeholder=" " required />
+            <input type="text" pattern="[0-9]{10}" name="student_phone" id="student_phone" className={inputStyle} placeholder=" " required />
             <label htmlFor="student_phone" className={labelStyle}>Student&apos;s Mobile No.</label>
         </div>
     </div>
